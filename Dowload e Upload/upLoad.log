@@ -1,0 +1,57 @@
+2025-04-11 20:00:09,596 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-11 20:00:09,597 - [33mPress CTRL+C to quit[0m
+2025-04-11 20:00:09,601 -  * Restarting with stat
+2025-04-11 20:00:10,387 -  * Debugger is active!
+2025-04-11 20:00:10,394 -  * Debugger PIN: 126-130-651
+2025-04-11 20:03:22,134 - 127.0.0.1 - - [11/Apr/2025 20:03:22] "[33mPOST /upload HTTP/1.1[0m" 404 -
+2025-04-11 20:04:07,055 - Falha no upload: Nennhum arquivo enviado
+2025-04-11 20:04:07,056 - 127.0.0.1 - - [11/Apr/2025 20:04:07] "[31m[1mPOST /uploads/upload HTTP/1.1[0m" 400 -
+2025-04-11 20:07:08,075 - Falha no upload: Nennhum arquivo enviado
+2025-04-11 20:07:08,076 - 127.0.0.1 - - [11/Apr/2025 20:07:08] "[31m[1mPOST /uploads/upload HTTP/1.1[0m" 400 -
+2025-04-11 20:07:10,481 - Falha no upload: Nennhum arquivo enviado
+2025-04-11 20:07:10,481 - 127.0.0.1 - - [11/Apr/2025 20:07:10] "[31m[1mPOST /uploads/upload HTTP/1.1[0m" 400 -
+2025-04-11 20:07:31,603 - Falha no upload: Nennhum arquivo enviado
+2025-04-11 20:07:31,604 - 127.0.0.1 - - [11/Apr/2025 20:07:31] "[31m[1mPOST /uploads/upload HTTP/1.1[0m" 400 -
+2025-04-11 20:08:51,254 - Falha no upload: dafaf98878586e9d7f2466dbb97ef4fa.png - Excede o tamanho máximo de 15 KB
+2025-04-11 20:08:51,254 - 127.0.0.1 - - [11/Apr/2025 20:08:51] "[31m[1mPOST /uploads/upload HTTP/1.1[0m" 400 -
+2025-04-11 20:09:19,572 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:09:19,689 -  * Restarting with stat
+2025-04-11 20:09:20,755 -  * Debugger is active!
+2025-04-11 20:09:20,759 -  * Debugger PIN: 126-130-651
+2025-04-11 20:09:22,805 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:09:22,927 -  * Restarting with stat
+2025-04-11 20:09:23,845 -  * Debugger is active!
+2025-04-11 20:09:23,850 -  * Debugger PIN: 126-130-651
+2025-04-11 20:09:32,937 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:09:33,038 -  * Restarting with stat
+2025-04-11 20:09:33,930 -  * Debugger is active!
+2025-04-11 20:09:33,934 -  * Debugger PIN: 126-130-651
+2025-04-11 20:09:36,986 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:09:37,092 -  * Restarting with stat
+2025-04-11 20:09:37,926 -  * Debugger is active!
+2025-04-11 20:09:37,930 -  * Debugger PIN: 126-130-651
+2025-04-11 20:09:40,972 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:09:41,071 -  * Restarting with stat
+2025-04-11 20:09:41,927 -  * Debugger is active!
+2025-04-11 20:09:41,933 -  * Debugger PIN: 126-130-651
+2025-04-11 20:09:43,974 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:09:44,101 -  * Restarting with stat
+2025-04-11 20:09:45,029 -  * Debugger is active!
+2025-04-11 20:09:45,036 -  * Debugger PIN: 126-130-651
+2025-04-11 20:09:50,341 - Falha no upload: dafaf98878586e9d7f2466dbb97ef4fa.png - Excede o tamanho máximo de 50 KB
+2025-04-11 20:09:50,341 - 127.0.0.1 - - [11/Apr/2025 20:09:50] "[31m[1mPOST /uploads/upload HTTP/1.1[0m" 400 -
+2025-04-11 20:11:11,591 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:11:11,690 -  * Restarting with stat
+2025-04-11 20:11:12,646 -  * Debugger is active!
+2025-04-11 20:11:12,651 -  * Debugger PIN: 126-130-651
+2025-04-11 20:11:14,696 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:11:14,781 -  * Restarting with stat
+2025-04-11 20:11:15,675 -  * Debugger is active!
+2025-04-11 20:11:15,682 -  * Debugger PIN: 126-130-651
+2025-04-11 20:11:16,728 -  * Detected change in 'C:\\Users\\caiqu\\Desktop\\Estudos\\Senac\\UC 10\\Dowload e Upload\\upload_controller.py', reloading
+2025-04-11 20:11:16,885 -  * Restarting with stat
+2025-04-11 20:11:17,755 -  * Debugger is active!
+2025-04-11 20:11:17,759 -  * Debugger PIN: 126-130-651
+2025-04-11 20:11:24,689 - Upload bem-sucedido: dafaf98878586e9d7f2466dbb97ef4fa.png | IP: 127.0.0.1 | Data: 2025-04-11 20:11:24.689194
+2025-04-11 20:11:24,690 - 127.0.0.1 - - [11/Apr/2025 20:11:24] "POST /uploads/upload HTTP/1.1" 200 -

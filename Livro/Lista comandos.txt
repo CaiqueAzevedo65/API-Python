@@ -1,0 +1,61 @@
+//Lista de comandos
+
+Rotas GET
+    Mostrar todos os itens (livros): "/Livro"
+
+
+    Buscar itens (livros) pelo id: "/Livro/<int:id>"
+
+
+    Buscar o primeiro item: "/Livro/First"
+
+
+    Buscar itens (livros) filtrando por genero: "/Livro/Genero/<genero>"
+
+
+    Buscar itens (livros) filtrando por diretor: "/Livro/Diretor/<diretor>"
+
+
+    Buscar itens (livros) ordenados por duração: "/Livro/Ordenar"
+
+
+    Buscar itens (livros) com um limite: "/Livro/Limite"
+
+    
+    Buscar itens (livros) ignorando uma certa quantidade inicial: "/Livro/Offset"
+
+
+    Contar todos os itens (livros): "/Livro/Contar"
+
+
+    Mostrar itens (livros) por página: "/Livro/Paginar"
+
+
+    Buscar todos os generos distintos: "/Livro/Generos"
+
+
+    Buscar e contar os generos de todos os itens (livros): "/Livro/Contagem/generos"
+
+
+    Mostrar os títulos de todos os itens (livros): "/Livro/Titulos"
+
+
+    Buscar se tal item (livro) existe pelo título: "/Livro/Existe/<titulo>"
+
+
+Rotas POST
+    Criar, ou postar, novo item (livro): "/Livro"
+
+        {
+        "titulo": "",
+        "genero": "",
+        "paginas": "",
+        "ano_lancamento": "",
+        "autor": ""
+        }
+
+Rotas PUT
+    Atualizar dados de um item (livro) pelo id: "Livro/<int:livro_id>"
+    
+Rotas DELETE
+    Deletar um item (livro): "/Livro/<id_livro>?confirmacao=True"

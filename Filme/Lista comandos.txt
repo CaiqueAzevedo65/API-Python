@@ -1,0 +1,51 @@
+//Lista de comandos
+
+Rotas GET
+    Mostrar todos os itens (filmes): "/Filme"
+
+
+    Buscar itens (filmes) pelo id: "/Filme/<int:id>"
+
+
+    Buscar o primeiro item: "/Filme/First"
+
+
+    Buscar itens (filmes) filtrando por genero: "/Filme/Genero/<genero>"
+
+
+    Buscar itens (filmes) filtrando por diretor: "/Filme/Diretor/<diretor>"
+
+
+    Buscar itens (filmes) ordenados por duração: "/Filme/Ordenar"
+
+
+    Buscar itens (filmes) com um limite: "/Filme/Limite"
+
+    
+    Buscar itens (filmes) ignorando uma certa quantidade inicial: "/Filme/Offset"
+
+
+    Contar todos os itens (filmes): "/Filme/Contar"
+
+
+    Mostrar itens (filmes) por página: "/Filme/Paginar"
+
+
+    Buscar todos os generos distintos: "/Filme/Generos"
+
+
+    Buscar e contar os generos de todos os itens (filmes): "/Filme/Contagem/generos"
+
+
+    Mostrar os títulos de todos os itens (filmes): "/Filme/Titulos"
+
+
+    Buscar se tal item (filme) existe pelo título: "/Filme/Existe/<titulo>"
+
+
+Rotas POST
+    Criar, ou postar, novo item (filme): "/Filme"
+
+Rotas PUT
+    Atualizar dados de um item (filme) pelo id: "Filme/<int:filme_id>"
+    

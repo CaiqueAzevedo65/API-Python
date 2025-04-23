@@ -1,0 +1,113 @@
+register + login
+
+  -----------POST----------------
+
+  http://127.0.0.1:5000/users/register
+
+  {
+    "username": "testuser",
+    "password": "senha123"
+  }
+
+  -------------------------------
+  http://127.0.0.1:5000/users/login
+
+  {
+    "username": "testuser",
+    "password": "senha123"
+  }
+
+  -----------GET----------------
+
+  http://127.0.0.1:5000/users/me
+
+  Authorization - type - Bearer Token Token exp: [colocar código gerado do login]
+
+
+  -----------PUT----------------
+
+  http://127.0.0.1:5000/users/me
+
+  {
+    "username": "testuser",
+    "password": "senha123"
+  }
+
+  Authorization - type - Bearer Token Token exp: [colocar código gerado do login]
+
+  -----------DELETE-------------
+
+  http://127.0.0.1:5000/users/me
+
+  Authorization - type - Bearer Token Token exp: [colocar código gerado do login]
+
+Logins:
+
+
+{
+  "username": "testuser1",
+  "password": "senha1"
+}
+
+{
+  "username": "testuser2",
+  "password": "senha2"
+}
+
+{
+  "username": "testuser3",
+  "password": "senha3"
+}
+
+
+formularios
+
+-----------POST----------------
+
+http://127.0.0.1:5000/forms/register
+
+{
+  "username": "testuser",
+  "password": "senha123"
+}
+
+-------------------------------
+http://127.0.0.1:5000/users/login
+
+{
+  "username": "testuser",
+  "password": "senha123"
+}
+
+-----------GET----------------
+
+http://127.0.0.1:5000/users/me
+
+Authorization - type - Bearer Token Token exp: [colocar código gerado do login]
+
+
+-----------PUT----------------
+
+http://127.0.0.1:5000/users/me
+
+{
+  "username": "testuser",
+  "password": "senha123"
+}
+
+Authorization - type - Bearer Token Token exp: [colocar código gerado do login]
+
+-----------DELETE-------------
+
+http://127.0.0.1:5000/users/me
+
+Authorization - type - Bearer Token Token exp: [colocar código gerado do login]
+
+Logins:
+{
+  "nome":"Robertinho ", 
+  "email":"Robertinho Soccer", 
+  "data_nascimento":"11/09/2001", 
+  "cpf":"123456789", 
+  "genero":"Optimus Prime"
+}
