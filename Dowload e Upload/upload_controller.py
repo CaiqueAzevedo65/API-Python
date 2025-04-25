@@ -9,7 +9,7 @@ logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format="%(asctime)s -
 
 PASTA_UPLOAD = 'uploads'
 EXTENSOES_PERMITIDAS = {'png', 'jpg', 'jpeg', 'gif', 'pdf', 'txt'}
-TAMANHO_MAXIMO_ARQUIVO = 500*1024 # 500 KB
+TAMANHO_MAXIMO_ARQUIVO = 10*1048576 # 10MB
 
 if not os.path.exists(PASTA_UPLOAD):
     os.makedirs(PASTA_UPLOAD)
@@ -33,7 +33,7 @@ class UploadController:
         
         if request.content_length > TAMANHO_MAXIMO_ARQUIVO:
             logging.warning(f'Falha no upload: {arquivo.filename} - Excede o tamanho máximo de 500 KB')
-            return jsonify({"error": "Excede o tamanho máximo de 500 KB"}), 400
+            return jsonify({"error": "Excede o tamanho máximo de 10MB (10000kb)"}), 400
 
         if arquivo and UploadController.arquivo_permitido(arquivo.filename):
             nome_arquivo = secure_filename(arquivo.filename)
