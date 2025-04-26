@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from download_controller import DownloadController
+from DownloadsUploads.Downloads.download_controller import DownloadController
 
 dowload_bp = Blueprint('dowload_bp', __name__)
 

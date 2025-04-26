@@ -24,13 +24,13 @@ class UploadController:
         if 'file' not in request.files:
             logging.warning('Falha no upload: Nennhum arquivo enviado')
             return jsonify({"error": "Nennhum arquivo enviado"}), 400
-            
-        arquivo = request.files['file']
-
-        if arquivo.filename =='':
-            logging.warning('Falha no upload: Nome do arquivo vazio')
-            return jsonify({"error": "Nome do arquivo vazio"}), 400
         
+        arquivo = request.files['file']
+        
+        if arquivo.filename == 'file':
+            logging.warning('Falha no upload: Nome do arquivo inválido')
+            return jsonify({"error": "Nome do arquivo inválido"}), 400
+
         if request.content_length > TAMANHO_MAXIMO_ARQUIVO:
             logging.warning(f'Falha no upload: {arquivo.filename} - Excede o tamanho máximo de 500 KB')
             return jsonify({"error": "Excede o tamanho máximo de 10MB (10000kb)"}), 400
@@ -38,15 +38,22 @@ class UploadController:
         if arquivo and UploadController.arquivo_permitido(arquivo.filename):
             nome_arquivo = secure_filename(arquivo.filename)
             caminho_arquivo = os.path.join(PASTA_UPLOAD, nome_arquivo)
-            arquivo.save(caminho_arquivo)
 
+            if os.path.exists(caminho_arquivo):
+                logging.warning(f'Falha no upload: {nome_arquivo} - Arquivo já existe')
+                return jsonify({
+                    "error": "Arquivo com o mesmo nome já existe",
+                    "arquivo": nome_arquivo
+                }), 400
+
+            arquivo.save(caminho_arquivo)
             ip_usuario = request.remote_addr
             logging.info(f'Upload bem-sucedido: {nome_arquivo} | IP: {ip_usuario} | Data: {datetime.now()}')
-
             return jsonify({
                 "msg": "Arquivo salvo com sucesso",
                 "arquivo": nome_arquivo
             }), 200
+
         else:
             logging.warning(f'Falha no upload: {arquivo.filename} - Tipo de arquivo não permitido')
             return jsonify({
