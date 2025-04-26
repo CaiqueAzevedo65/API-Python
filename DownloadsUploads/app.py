@@ -2,8 +2,8 @@ from flask import Flask
 from db import init_db
 from flask_jwt_extended import JWTManager
 from Users.users_route import user_bp
-from DownloadsUploads.UploadsMain.upload_route import upload_bp
-from DownloadsUploads.Downloads.download_route import dowload_bp
+from UploadsMain.upload_route import upload_bp
+from Downloads.download_route import dowload_bp
 import os 
 
 app = Flask(__name__)

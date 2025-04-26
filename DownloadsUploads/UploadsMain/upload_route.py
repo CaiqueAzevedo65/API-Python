@@ -1,6 +1,6 @@
 from flask import Blueprint 
 
-from DownloadsUploads.UploadsMain.upload_controller import UploadController
+from UploadsMain.upload_controller import UploadController
 
 upload_bp = Blueprint('upload_bp', __name__)
 
